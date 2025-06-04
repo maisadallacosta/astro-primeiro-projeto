@@ -1,6 +1,7 @@
 ---
-const { platform, username } = astro.props;
+const { platform, username } = Astro.props;
 ---
+
 <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
 
 <style>
@@ -11,9 +12,3 @@ const { platform, username } = astro.props;
     text-decoration: none;
   }
 </style>
-
-<Footer>
-  <Social platform="twitter" username="astrodotbuild" />
-  <Social platform="github" username="withastro" />
-  <Social platform="youtube" username="astrodotbuild" />
-</Footer>
