@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/markdownpostlayout.astro
 title: Minha Quarta Postagem no Blog
 author: Aluno Astro
 description: "Esta postagem irá aparecer por si mesma!"
