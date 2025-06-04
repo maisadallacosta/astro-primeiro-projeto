@@ -1,13 +1,17 @@
 ---
-const { platform, username } = Astro.props;
+import social from './social.astro';
 ---
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
 
 <style>
-  a {
-    padding: 0.5rem 1rem;
-    color: white;
-    background-color: #4c1d95;
-    text-decoration: none;
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
   }
-</style> 
+</style>
+
+<footer>
+  <social platform="twitter" username="astrodotbuild" />
+  <social platform="github" username="withastro" />
+  <social platform="youtube" username="astrodotbuild" />
+</footer>
