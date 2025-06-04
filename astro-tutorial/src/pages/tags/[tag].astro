@@ -13,10 +13,12 @@ export async function getStaticPaths() {
     props: { posts: filteredPosts },
   };
 });
+}
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
+
 <BaseLayout pageTitle={tag}>
   <p>Postagens com a tag {tag}</p>
   <ul>
