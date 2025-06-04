@@ -3,7 +3,7 @@ import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
 import '../style/global.css';
 
-const pageTitle = "Página Inicial";
+const { pageTitle } = Astro.props;
 ---
 <html lang="pt-BR">
   <head>
